@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useLoaderData } from 'react-router-dom';
 
 const Quiz = () => {
@@ -8,10 +10,10 @@ const Quiz = () => {
     const answerCheck= (question, option)=>{
         console.log(option)
         if(question.correctAnswer===option){
-            alert("dshdshg")
+            toast("Wow, your answer is correct!")
         }
         else{
-            alert('incorrect')
+            toast("Incorrect answer, please try again")
         }
 
     }
@@ -41,6 +43,7 @@ const Quiz = () => {
                )}
 
            </div>
+           <ToastContainer />
        </div>
        
 
