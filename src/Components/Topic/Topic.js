@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Topic = ({topic}) => {
     const {id, logo, name, total}=topic
@@ -14,7 +15,7 @@ const Topic = ({topic}) => {
                 <p>This section have {total} quizzes about {name}</p>
                 <div className="card-actions justify-end">
                 
-                <div className="badge badge-outline">Start Practice --></div>
+                <Link to={`/quiz/${id}`} className="badge badge-outline">Start Practice </Link>
                 </div>
             </div>
         </div>
