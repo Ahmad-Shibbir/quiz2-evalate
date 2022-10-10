@@ -21,7 +21,7 @@ const Footer = () => {
             <div>
                 <p>Copyright © 2022 - All right reserved by Quize2Evaluate Education Ltd</p>
             </div>
-            </footer>
+        </footer>
     );
 };
 
