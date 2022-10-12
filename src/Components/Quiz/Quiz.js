@@ -35,8 +35,8 @@ const Quiz = () => {
 
             <div >
                {questions.map(question=>               
-                    <div className="card  bg-black shadow-xl my-10 p-8 mx-40">
-                        <h1 className='text-3xl font-bold'> {question.question.replace(/<\/?[^>]+>/gi, '')}
+                    <div className="card  bg-black shadow-xl sm: my-6 sm:p-8 sm:mx-6 md:my-10 md:p-8 md:mx-40">
+                        <h1 className='md:text-3xl sm:text-2xl font-bold'> {question.question.replace(/<\/?[^>]+>/gi, '')}
                         
                         <svg onClick={()=>displayAnswer(question.correctAnswer)} 
                         
